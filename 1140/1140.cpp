@@ -18,7 +18,6 @@ bool split(std::string str, std::string del = " "){
     
     if(abs(code - deltaCode) != 32 && code - deltaCode != 0){ 
       return false;
-      break;
     }
     
   }while(end != -1);
