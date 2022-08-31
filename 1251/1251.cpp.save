@@ -1,0 +1,22 @@
+#include<iostream>
+#include<map>
+#include<string>
+
+int main(){
+
+	std::string linha;
+	std::map<std::string,int> quantidade;
+	std::map<std::string,int>::iterator it;
+	char key;
+	while(std::getline(std::cin, linha)){
+		for(int i = 0; i < linha.size(); i++){
+			
+1	quantidade[linha[i]] += 1;
+		}
+		for( it = quantidade.begin(); it != quantidade.end(); ++it){
+			std::cout<< it->first<<" "<<it->second<<"\n";
+		}
+		std::cout<<std::endl;
+	}
+	return 0;
+}
